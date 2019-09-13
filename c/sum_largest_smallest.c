@@ -41,7 +41,7 @@ int main() {
 
 int max3(int arr[3]) {
     int m = arr[0];
-    for (int i=1; i<3;i++) {
+    for (int i=1; i<3; i++) {
         if (arr[i] > m) {
             m = arr[i];
         }
@@ -52,7 +52,7 @@ int max3(int arr[3]) {
 
 int min3(int arr[3]) {
     int m = arr[0];
-    for (int i=1; i<3;i++) {
+    for (int i=1; i<3; i++) {
         if (arr[i] < m) {
             m = arr[i];
         }
