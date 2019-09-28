@@ -1,7 +1,7 @@
 			;		multiply two values using bitwise AND and bit shifting.
 			;		figured out to multiply any two values but was not sure how to generalize them.
-			;		spent 4 hours researching and implementing and finally found an algorithm that made sense and worked.
-			;		credit to: https://stackoverflow.com/a/14663667
+			;		spent 4 hours researching, implementing and finally found an algorithm that made sense.
+			;		credit to: https://www.sciencedirect.com/topics/engineering/binary-multiplication
 			
 AREA
 			MOV		r10, #intA		; store the address of intA into r10.
@@ -9,21 +9,23 @@ AREA
 			LDR		r2, [r10, #4]	; load the value at address r10+4 into r2.
 			
 keepAdding
-			;		if r2 bitwise AND 1 is 1, meaning r2 is odd, update the product.
+			;		if r2 bitwise AND 1 is 1, update the product by adding r1.
 			AND		r6, r2, #1
 			CMP		r6, #1
 			BEQ		updateProduct
-			;		else,	update r1 and r2 by shifting them.
+			
+			;		else,	shift r1 and r2.
 			BL		shift
 			
 updateProduct
-			;		update the product by adding r1 to the total.
+			;		add r1 to the total.
 			ADD		r0, r0, r1
+			
 			;		shift r1 and r2.
 			BL		shift
 			
 shift
-			;		shift left r1 and shift right r2, both by 1.
+			;		shift r1 left and shift r2 right by 1.
 			LSL		r1, r1, #1
 			LSR		r2, r2, #1
 			
