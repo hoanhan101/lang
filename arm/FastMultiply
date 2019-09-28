@@ -1,0 +1,40 @@
+			;		multiply two values using bitwise AND and bit shifting.
+			;		algorithm credit: https://stackoverflow.com/a/14663667
+			
+AREA
+			MOV		r10, #intA		; store the address of intA into r10.
+			LDR		r1, [r10]			; load the value at address r10 into r1.
+			LDR		r2, [r10, #4]	; load the value at address r10+4 into r2.
+			
+keepAdding
+			;		if r2 bitwise AND 1 is 1, meaning r2 is odd, update the product.
+			AND		r6, r2, #1
+			CMP		r6, #1
+			BEQ		updateProduct
+			;		else,	update r1 and r2 by shifting them.
+			BL		shift
+			
+updateProduct
+			;		update the product by adding r1 to the total.
+			ADD		r0, r0, r1
+			;		shift r1 and r2.
+			BL		shift
+			
+shift
+			;		shift left r1 and shift right r2, both by 1.
+			LSL		r1, r1, #1
+			LSR		r2, r2, #1
+			
+			;		if r2 is not 0 yet, keep adding.
+			CMP		r2, #0
+			BNE		keepAdding
+			
+			;		save the product value to r0
+			MOV		r10, #product	; store the address of product into r10.
+			STR		r0, [r10]			; store the value at r10 into r0.
+			
+			
+product		FILL		4
+intA			DCD		66
+intB			DCD		88
+			END
