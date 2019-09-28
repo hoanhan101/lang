@@ -1,5 +1,7 @@
 			;		multiply two values using bitwise AND and bit shifting.
-			;		algorithm credit: https://stackoverflow.com/a/14663667
+			;		figured out to multiply any two values but was not sure how to generalize them.
+			;		spent 4 hours researching and implementing and finally found an algorithm that made sense and worked.
+			;		credit to: https://stackoverflow.com/a/14663667
 			
 AREA
 			MOV		r10, #intA		; store the address of intA into r10.
