@@ -14,3 +14,4 @@ Fizz Buzz | c
 Palindrome Identifier | c
 Towers of Hanoi | c
 Matrix Multiplication | c
+Shape Hierarchy | [smalltalk (squeak)](https://github.com/hoanhan101/lang/blob/master/smalltalk/Shape.st)
