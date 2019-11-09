@@ -3,8 +3,8 @@
 (ns clojure.test.reverse-seq
   (:use clojure.test))
 
-(defn reverse-seq [n]
-  (reduce conj () n))
+(defn reverse-seq [s]
+  (reduce conj () s))
 
 (deftest reverse-tests
   (is (= '()                     (reverse-seq [])))
