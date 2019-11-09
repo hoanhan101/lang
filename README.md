@@ -11,3 +11,6 @@ Mean, Median, and Mode with Arrays | [c](https://github.com/hoanhan101/lang/blob
 Shape Hierarchy | [smalltalk (squeak)](https://github.com/hoanhan101/lang/blob/master/smalltalk/Shape.st)
 Factorial | [clj](https://github.com/hoanhan101/lang/blob/master/clj/factorial.clj)
 Sum up to n | [clj](https://github.com/hoanhan101/lang/blob/master/clj/sum-up-to-n.clj)
+Return stats of a sequence | [clj](https://github.com/hoanhan101/lang/blob/master/clj/stats.clj)
+Reverse a sequence | [clj](https://github.com/hoanhan101/lang/blob/master/clj/reverse-seq.clj)
+Check if palindrome | [clj](https://github.com/hoanhan101/lang/blob/master/clj/palindrome.clj)
