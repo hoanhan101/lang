@@ -14,3 +14,4 @@ Sum up to n | [clj](https://github.com/hoanhan101/lang/blob/master/clj/sum-up-to
 Return stats of a sequence | [clj](https://github.com/hoanhan101/lang/blob/master/clj/stats.clj)
 Reverse a sequence | [clj](https://github.com/hoanhan101/lang/blob/master/clj/reverse-seq.clj)
 Check if palindrome | [clj](https://github.com/hoanhan101/lang/blob/master/clj/palindrome.clj)
+Check if two strings are anagram | [clj](https://github.com/hoanhan101/lang/blob/master/clj/anagram.clj)
