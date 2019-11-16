@@ -15,3 +15,4 @@ Return stats of a sequence | [clj](https://github.com/hoanhan101/lang/blob/maste
 Reverse a sequence | [clj](https://github.com/hoanhan101/lang/blob/master/clj/reverse-seq.clj)
 Check if palindrome | [clj](https://github.com/hoanhan101/lang/blob/master/clj/palindrome.clj)
 Check if two strings are anagram | [clj](https://github.com/hoanhan101/lang/blob/master/clj/anagram.clj)
+Tic Tac Toe | [clj](https://github.com/hoanhan101/lang/blob/master/clj/tictactoe.clj)
