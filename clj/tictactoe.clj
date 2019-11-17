@@ -1,13 +1,16 @@
 ; tic tac toe game
 
-(def mapa {
+; board represents a tic tac toe board. it maps a location (from 00 to 22) to a
+; symbol (X or O). initialize symbols as underscore when the game starts.
+(def board {
   :00 "_" :01 "_" :02 "_"
   :10 "_" :11 "_" :12 "_"
   :20 "_" :21 "_" :22 "_"
   }
 )
 
-(defn print-instruction[i j]
+; print-locations the board with its locations.
+(defn print-locations[i j]
   (loop [x 0]
     (when (< x i)
       (loop [y 0]
@@ -22,12 +25,13 @@
   )
 )
 
+; print-board prints the current board.
 (defn print-board[i j]
   (loop [x 0]
     (when (< x i)
       (loop [y 0]
         (when (< y j)
-          (print ((keyword (str x y)) mapa) "")
+          (print ((keyword (str x y)) board) "")
           (recur (+ y 1))
         )
       )
@@ -37,23 +41,28 @@
   )
 )
 
-(defn move[number sign]
-  (def mapa (assoc mapa (keyword number) sign)
+; move updates a symbol in a board's location.
+(defn move[location sym]
+  (def board (assoc board (keyword location) sym)
   )
 )
 
-(defn play[number sign]
-  (move number sign)
+; plays updates a symbol in a board's location and prints out the
+; updated/current board.
+(defn play[location sym]
+  (move location sym)
 
   (println)
-  (println ">> move" sign "to location" number)
+  (println ">> move" sym "to location" location)
   (print-board 3 3)
   (println)
 )
 
+; check3 checks if 3 symbols from the 3 given locations are not undersocre and
+; the same.
 (defn check3[l1 l2 l3]
-  (if (and (not= "_" ((keyword l1) mapa)) (not= "_" ((keyword l2) mapa)) (not= "_" ((keyword l3) mapa)))
-    (if (= ((keyword l1) mapa) ((keyword l2) mapa) ((keyword l3) mapa)) 
+  (if (and (not= "_" ((keyword l1) board)) (not= "_" ((keyword l2) board)) (not= "_" ((keyword l3) board)))
+    (if (= ((keyword l1) board) ((keyword l2) board) ((keyword l3) board)) 
       true
       false
     )
@@ -61,6 +70,9 @@
   )
 )
 
+; check-win checks if there exists a win state in the board. a win state is a
+; state where 3 symbols on a straight line are the same. there are only 8 win
+; states in a 3x3 board as below.
 (defn check-win[]
   (or
     (check3 "00" "01" "02")
@@ -74,10 +86,10 @@
   )
 )
 
-
+; gameon is the main function to run the game.
 (defn gameon[]
   (println ">> welcome to tic tac toe. here is our 3x3 board with its location:")
-  (print-instruction 3 3)
+  (print-locations 3 3)
 
   (println)
 
@@ -88,7 +100,7 @@
 
   (loop [x 9]
     (when (> x 0)
-      (println x "enter the location (00 to 22) first, then enter the sign (X or O) in a new line")
+      (println x "enter a location (00 to 22) first, then enter a symbol (X or O) in a new line")
       (let [a (read-line) b (read-line)]
         (play a b)
         (if (= true (check-win))
