@@ -104,12 +104,10 @@
       (let [a (read-line) b (read-line)]
         (play a b)
         (if (= true (check-win))
-          ; FIXME - can't "break" a loop in clojure. need to find a better way
-          ; to do this.
-          (println "*** WE HAVE FOUND A WINNER. HIT CTRL-C TO QUIT ***")
+          (println "*** WE HAVE FOUND A WINNER.***")
+          (recur (- x 1))
         )
       )
-      (recur (- x 1))
     )
   )
 )
