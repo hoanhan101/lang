@@ -20,7 +20,7 @@ func reverseString(input: [String]) -> [String] {
 
 func assertEqual(s1: [String], s2: [String]) {
     if s1 != s2 {
-        print(s1, "is not equal to", s2)
+        print("'\(s1)' is not equal to '\(s2)'")
     } else {
         print("passed")
     }
