@@ -17,3 +17,4 @@ Check if palindrome | [clj](https://github.com/hoanhan101/lang/blob/master/clj/p
 Check if two strings are anagram | [clj](https://github.com/hoanhan101/lang/blob/master/clj/anagram.clj)
 Tic Tac Toe | [clj](https://github.com/hoanhan101/lang/blob/master/clj/tictactoe.clj)
 Reverse a string in place | [swift](https://github.com/hoanhan101/lang/blob/master/swift/revstring.swift)
+Is permutation palindrome | [swift](https://github.com/hoanhan101/lang/blob/master/swift/palindrome.swift)
