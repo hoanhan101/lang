@@ -27,11 +27,11 @@ func assertEqual(s1: [String], s2: [String]) {
 }
 
 struct test {
-    var input: [String]
-    var expected: [String]
+    let input: [String]
+    let expected: [String]
 }
 
-var tests: [test] = [
+let tests: [test] = [
     test(input: [], expected: []),
     test(input: ["h"], expected: ["h"]),
     test(input: ["h", "e"], expected: ["e", "h"]),
