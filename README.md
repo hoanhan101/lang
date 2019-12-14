@@ -18,3 +18,4 @@ Check if two strings are anagram | [clj](https://github.com/hoanhan101/lang/blob
 Tic Tac Toe | [clj](https://github.com/hoanhan101/lang/blob/master/clj/tictactoe.clj)
 Reverse a string in place | [swift](https://github.com/hoanhan101/lang/blob/master/swift/revstring.swift)
 Is permutation palindrome | [swift](https://github.com/hoanhan101/lang/blob/master/swift/palindrome.swift)
+Merge sorted arrays | [swift](https://github.com/hoanhan101/lang/blob/master/swift/merge.swift)
