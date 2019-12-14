@@ -1,5 +1,6 @@
 #!/usr/bin/swift
 
+// mergeSortedArray merges 2 sorted array and returns a new one.
 func mergeSortedArray(a1: [Int], a2: [Int]) -> [Int] {
 	var out: [Int] = []
 	var i: Int = 0

@@ -1,5 +1,6 @@
 #!/usr/bin/swift
 
+// countingSort implements counting sort algorithm for a given list of integers.
 func countingSort(numbers: [Int], size: Int) -> [Int] {
     var counts = Array(repeating: 0, count: size+1)
     var out: [Int] = []
