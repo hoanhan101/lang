@@ -22,3 +22,4 @@ Merge sorted arrays | [swift](https://github.com/hoanhan101/lang/blob/master/swi
 Counting sort | [swift](https://github.com/hoanhan101/lang/blob/master/swift/counting.swift)
 Maximum stock price | [swift](https://github.com/hoanhan101/lang/blob/master/swift/stock.swift)
 Shuffle intergers in-place | [swift](https://github.com/hoanhan101/lang/blob/master/swift/shuffle.swift)
+Find unique ID | [swift](https://github.com/hoanhan101/lang/blob/master/swift/unique.swift)
