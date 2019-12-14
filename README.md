@@ -20,3 +20,4 @@ Reverse a string in place | [swift](https://github.com/hoanhan101/lang/blob/mast
 Is permutation palindrome | [swift](https://github.com/hoanhan101/lang/blob/master/swift/palindrome.swift)
 Merge sorted arrays | [swift](https://github.com/hoanhan101/lang/blob/master/swift/merge.swift)
 Counting sort | [swift](https://github.com/hoanhan101/lang/blob/master/swift/counting.swift)
+Maximum stock price | [swift](https://github.com/hoanhan101/lang/blob/master/swift/stock.swift)
