@@ -23,3 +23,4 @@ Counting sort | [swift](https://github.com/hoanhan101/lang/blob/master/swift/cou
 Maximum stock price | [swift](https://github.com/hoanhan101/lang/blob/master/swift/stock.swift)
 Shuffle intergers in-place | [swift](https://github.com/hoanhan101/lang/blob/master/swift/shuffle.swift)
 Find unique ID | [swift](https://github.com/hoanhan101/lang/blob/master/swift/unique.swift)
+Longest substring with k distinct characters | [swift](https://github.com/hoanhan101/lang/blob/master/swift/substring.swift)
